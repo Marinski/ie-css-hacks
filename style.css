@@ -1,0 +1,19 @@
+/* If you're targeting IE 9, 10, 11 you can try */
+@media screen and (min-width:0\0) { 
+    /* Enter CSS here */
+}
+
+/* If it's only IE11 */
+@media all and (-ms-high-contrast:none)
+ {
+ .foo { color: green } /* IE10 */
+ *::-ms-backdrop, .foo { color: red } /* IE11 */
+ }
+
+/* If it's for IE10+ */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+   /* IE10+ specific styles go here */  
+}
+
+/* Also, a Google search came up with this */
+_:-ms-fullscreen, :root .ie11up { property:value; }

@@ -17,3 +17,10 @@
 
 /* Also, a Google search came up with this */
 _:-ms-fullscreen, :root .ie11up { property:value; }
+
+/* IE 6	IE 7	IE 8	IE 9	IE 10 */
+@media screen\0 {…}	No	No	Yes	Yes	Yes
+@media screen\9 {…}	Yes	Yes	No	No	No
+@media \0screen {…}	No	No	Yes	No	No
+@media \0screen\,screen\9 {…}	Yes	Yes	Yes	No	No
+@media screen and (min-width:0\0) {…}	No	No	No	Yes	Yes
